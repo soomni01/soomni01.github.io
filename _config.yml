@@ -2,6 +2,7 @@
 title: 숨니
 description: 공부, 기록하는 블로그입니다
 url: https://soomni01.github.io
+baseurl: ""
 avatar: /profile.jpeg
 paginate: 5
 permalink: pretty
