@@ -6,6 +6,8 @@ last_modified_at: 2020-10-01 01:08:25 +0800
 tags: [jekyll theme, jekyll, tutorial]
 toc:  true
 ---
+
+안녕하세요 로컬 서버 테스트 입니다
 Welcome to **Not Pure Poole**! This is an example post to show the layout.
 {: .message }
 
