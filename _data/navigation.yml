@@ -2,7 +2,9 @@
   url: /https://soomni01.github.io/
 - title: Tags
   url: /tags/
-- title: Blog
+- title: Dates
+  url: /dates/
+- title: Post
   url: /
 - title: About
   url: /about/
