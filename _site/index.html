@@ -18,6 +18,7 @@
 <link rel="canonical" href="http://localhost:4000/" />
 <meta property="og:url" content="http://localhost:4000/" />
 <meta property="og:site_name" content="숨니" />
+<link rel="next" href="http://localhost:4000/page2" />
 <meta name="twitter:card" content="summary" />
 <meta property="twitter:title" content="숨니" />
 <meta name="twitter:site" content="@vszhub" />
@@ -42,7 +43,7 @@
     <small>공부, 기록하는 블로그작동</small>
   </div><nav class="navigation">
     <ul class="navigation-list"><li class="navigation-item">
-        <a onclick="sessionStorage.setItem('forceCheckScroll', 'true')" href="/https://soomni01.github.io/">Home</a>
+        <a onclick="sessionStorage.setItem('forceCheckScroll', 'true')" href="/">Home</a>
       </li><li class="navigation-item">
         <a onclick="sessionStorage.setItem('forceCheckScroll', 'true')" href="/tags/">Tags</a>
       </li><li class="navigation-item">
@@ -92,18 +93,12 @@
   
   <section class="post-entry">
     <h2 class="post-title">
-<<<<<<< HEAD
       <a href="/2022/12/06/lsfirst/">
         ToDoList 첫번째
-=======
-      <a href="/2020/11/28/firstblog/">
-        First Blog
->>>>>>> c36e2da1fdb8469a610f6fc6d217b9bebd444daa
       </a>
     </h2>
 
     <div class="post-meta">
-<<<<<<< HEAD
       <time datetime="2022-12-06T16:32:00+09:00">06 Dec 2022</time></div>
 
     <p>혼자 공부를 시작할 때, 쉽게 시작할 수 있고 관심있게 할 만한 간단한 프로젝트가 무엇이 있을까 찾아봤을 때, ToDoList가 적합하다고 생각이 들어서 만들어보고자 했다.
@@ -134,12 +129,21 @@ isDuplicate 입력받은 title이 찾고 있는객체리스트에 있는 타이�
 static이라는 것은 class메소드라는 것 즉 투두유틸 클래스안에 있는 모든 메소드는 static 임
 title이 sc.next()인 이유는 제목이므로 단어
 desc = sc.nextLine().trim() nextLine은 한 문장씩 통째로 바꾸는 것이고 trim은 좌우여백 제거
-=======
+</p>
+  </section>
+  
+  <section class="post-entry">
+    <h2 class="post-title">
+      <a href="/2020/11/28/firstblog/">
+        First Blog
+      </a>
+    </h2>
+
+    <div class="post-meta">
       <time datetime="2020-11-28T18:32:00+09:00">28 Nov 2020</time></div>
 
     <p>블로그 새로 만들기 
 아직 배울 것이 많지만 스스로의 기록과 공부를 통한 발전을 위해 이 블로그를 작성하려고 한다.
->>>>>>> c36e2da1fdb8469a610f6fc6d217b9bebd444daa
 </p>
   </section>
   
@@ -172,27 +176,11 @@ desc = sc.nextLine().trim() nextLine은 한 문장씩 통째로 바꾸는 것이
 
 </p>
   </section>
-  
-  <section class="post-entry">
-    <h2 class="post-title">
-      <a href="/2020/09/30/welcome-to-not-pure-poole/">
-        Welcome to Not Pure Poole
-      </a>
-    </h2>
-
-    <div class="post-meta">
-      <time datetime="2020-09-30T00:18:00+09:00">30 Sep 2020</time></div>
-
-    <p>안녕하세요 로컬 서버 테스트 입니다
-Welcome to Not Pure Poole! This is an example post to show the layout.
-
-</p>
-  </section>
   </div>
 
 <div class="pagination">
   
-    <span class="pagination-item older">Older</span>
+    <a class="pagination-item older" href="/page2">Older</a>
   
   
     <span class="pagination-item newer">Newer</span>
