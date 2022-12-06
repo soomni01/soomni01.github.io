@@ -1,4 +1,10 @@
-- title: Blog
+- title: Home 
+  url: /
+- title: Tags
+  url: /tags/
+- title: Dates
+  url: /dates/
+- title: Post
   url: /
 - title: About
   url: /about/
