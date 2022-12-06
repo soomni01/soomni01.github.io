@@ -1,19 +1,10 @@
 - type: home 
   title: Home
   url: https://soomni01.github.io/
-<<<<<<< HEAD
-#- type: dates
-#  title: Dates
-#  url: /dates/
+
 #- type: categories
 #  title: Categories
 #  url: /categories/
 #- type: tags
 #  title: Tags
 #  url: /tags/
-=======
-#- type: categories
-#  title: Categories
-#  url: /categories/
-
->>>>>>> c36e2da1fdb8469a610f6fc6d217b9bebd444daa
