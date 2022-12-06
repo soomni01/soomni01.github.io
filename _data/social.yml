@@ -1,9 +1,19 @@
 - title: DarkMode
+<<<<<<< HEAD
   url:
   icon: fa-solid fa-circle-half-stroke
 - title: Email
   url: mailto://dsgh8933@naver.com
   icon: fas fa-envelope
+=======
+  url: 
+  icon: fa-solid fa-circle-half-stroke
+
+- title: Email
+  url: mailto://dsgh8933@naver.com
+  icon: fas fa-envelope
+  
+>>>>>>> c36e2da1fdb8469a610f6fc6d217b9bebd444daa
 - title: GitHub
   url: https://github.com/soomni01
   icon: fab fa-github

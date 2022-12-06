@@ -36,7 +36,7 @@ logo: logo.png
 social:
   name: Songzi Vong
   links:
-    - https://twitter.com/vszhub
+    - _syntax-dark
     - https://github.com/vszhub
 google_site_verification: xxxxx
 lang: en
@@ -46,7 +46,6 @@ sass:
   style: :compressed
 
 # Options
-
 # Replace this value and uncomment to enable Google Analytics tracking
 # google_analytics: UA-000000-0
 
