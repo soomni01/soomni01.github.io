@@ -1,8 +1,354 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" xml:lang="en"><generator uri="https://jekyllrb.com/" version="3.9.0">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" hreflang="en" /><updated>2022-12-06T19:25:04+09:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">숨니</title><subtitle>공부, 기록하는 블로그작동</subtitle><author><name>Songzi Vong</name><email>vszhub@gmail.com</email></author><entry><title type="html">ToDoList 첫번째</title><link href="http://localhost:4000/2022/12/06/lsfirst/" rel="alternate" type="text/html" title="ToDoList 첫번째" /><published>2022-12-06T16:32:00+09:00</published><updated>2022-12-06T16:32:00+09:00</updated><id>http://localhost:4000/2022/12/06/lsfirst</id><content type="html" xml:base="http://localhost:4000/2022/12/06/lsfirst/">&lt;p&gt;혼자 공부를 시작할 때, 쉽게 시작할 수 있고 관심있게 할 만한 간단한 프로젝트가 무엇이 있을까 찾아봤을 때, ToDoList가 적합하다고 생각이 들어서 만들어보고자 했다.&lt;/p&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" xml:lang="en"><generator uri="https://jekyllrb.com/" version="3.9.0">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" hreflang="en" /><updated>2022-12-07T23:21:07+09:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">숨니</title><subtitle>공부, 기록하는 블로그작동</subtitle><author><name>Songzi Vong</name><email>vszhub@gmail.com</email></author><entry><title type="html">마크다운(MarkDown) 문법</title><link href="http://localhost:4000/2022/12/06/markdown/" rel="alternate" type="text/html" title="마크다운(MarkDown) 문법" /><published>2022-12-06T19:42:00+09:00</published><updated>2022-12-06T19:42:00+09:00</updated><id>http://localhost:4000/2022/12/06/markdown</id><content type="html" xml:base="http://localhost:4000/2022/12/06/markdown/">&lt;style type=&quot;text/css&quot;&gt;
+@font-face {
+    font-family: 'Humanbumsuk';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2210-2@1.0/Humanbumsuk.woff2') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+}
+body {
+    font-family: 'KOTRAHOPE','Humanbumsuk' ;
+}
+
+&lt;/style&gt;
+
+&lt;p&gt;마크다운(Markdown)이란 웹 상에서 글을 작성하는 사람들을 위한 글쓰기 도구
+마크다운을 통해 HTML 형식으로 글을 변환할 수 있다.
+단, 간단하기 때문에 모든 HTML을 지원하지는 않는다. 
+마크다운은 쉽게 글을 쓰고 읽게 해 주는 서식(포맷)이다.
+참고 사이트&lt;/p&gt;
+
+&lt;hr /&gt;
+
+&lt;table&gt;
+  &lt;thead&gt;
+    &lt;tr&gt;
+      &lt;th style=&quot;text-align: left&quot;&gt;&amp;lt;span style type = “목차&lt;/th&gt;
+    &lt;/tr&gt;
+  &lt;/thead&gt;
+  &lt;tbody&gt;
+    &lt;tr&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;&lt;a href=&quot;#header-헤더&quot;&gt;헤더(Header)&lt;/a&gt;&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;&lt;a href=&quot;#horizontal-rules-수평선&quot;&gt;수평선(Horizontal Rules)&lt;/a&gt;&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;&lt;a href=&quot;#line-breaks-줄바꿈&quot;&gt;줄바꿈(Line Breaks)&lt;/a&gt;&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;&lt;a href=&quot;#emphasis-강조&quot;&gt;강조(Emphasis)&lt;/a&gt;&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;&lt;a href=&quot;#blockquotes-인용&quot;&gt;인용(BlockQuotes)&lt;/a&gt;&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;&lt;a href=&quot;#list-목록&quot;&gt;목록(List)&lt;/a&gt;&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;&lt;a href=&quot;#backslash-escapes&quot;&gt;Backslash Escape&lt;/a&gt;&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;&lt;a href=&quot;#image-이미지&quot;&gt;이미지(Images)&lt;/a&gt;&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;&lt;a href=&quot;#links-링크&quot;&gt;링크(Links)&lt;/a&gt;&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;&lt;a href=&quot;#codeblock-코드-블럭&quot;&gt;코드 블럭(Code Blocks)&lt;/a&gt;&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;&lt;a href=&quot;#checklist-체크리스트&quot;&gt;체크리스트(Checklists)&lt;/a&gt;&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;&lt;a href=&quot;#table-테이블&quot;&gt;표(Table)&lt;/a&gt;&lt;/td&gt;
+    &lt;/tr&gt;
+  &lt;/tbody&gt;
+&lt;/table&gt;
+
+&lt;hr /&gt;
+
+&lt;h2 id=&quot;header-헤더&quot;&gt;Header 헤더&lt;/h2&gt;
+&lt;p&gt;✍🏻 /#으로 시작하는 텍스트&lt;br /&gt;
+✍🏻 /#은 하나부터 여섯개까지 가능&lt;br /&gt;
+✍🏻 이때, H1은 ===로 H2는 —로 만들기 가능
+&lt;script src=&quot;https://gist.github.com/soomni01/2a1079e3222fc11e06cfca46ecb1375c.js&quot;&gt;&lt;/script&gt;&lt;/p&gt;
+
+&lt;h1 id=&quot;h1-헤더&quot;&gt;h1 헤더&lt;/h1&gt;
+&lt;h2 id=&quot;h2-헤더&quot;&gt;h2 헤더&lt;/h2&gt;
+&lt;h3 id=&quot;h3-헤더&quot;&gt;h3 헤더&lt;/h3&gt;
+&lt;h4 id=&quot;h4-헤더&quot;&gt;h4 헤더&lt;/h4&gt;
+&lt;h5 id=&quot;h5-헤더&quot;&gt;h5 헤더&lt;/h5&gt;
+&lt;h6 id=&quot;h6-헤더&quot;&gt;h6 헤더&lt;/h6&gt;
+
+&lt;h1 id=&quot;h1-헤더-1&quot;&gt;h1 헤더&lt;/h1&gt;
+
+&lt;h2 id=&quot;h2-헤더-1&quot;&gt;h2 헤더&lt;/h2&gt;
+
+&lt;hr /&gt;
+
+&lt;h2 id=&quot;horizontal-rules-수평선&quot;&gt;Horizontal Rules 수평선&lt;/h2&gt;
+&lt;p&gt;✍🏻 /- 또는 * 또는 _을 3개 이상&lt;br /&gt;
+✍🏻 단, -을 사용하는 경우에는 h2로 인식할 수 있기 때문에 전 라인은 비워놔야 가능 
+&lt;script src=&quot;https://gist.github.com/soomni01/876ed6a5ab48fbce4d2a14fae0c7d727.js&quot;&gt;&lt;/script&gt;&lt;/p&gt;
+
+&lt;hr /&gt;
+&lt;hr /&gt;
+&lt;hr /&gt;
+&lt;hr /&gt;
+
+&lt;h2 id=&quot;line-breaks-줄바꿈&quot;&gt;Line Breaks 줄바꿈&lt;/h2&gt;
+&lt;p&gt;✍🏻 &amp;lt;br&amp;gt;을 사용하여 줄바꿈 가능
+&lt;script src=&quot;https://gist.github.com/soomni01/e6cf2a38a157fac7273327dcae2d72ff.js&quot;&gt;&lt;/script&gt;
+And I say hey!&lt;br /&gt;
+I’m gonna make it
+Smile, smile, smile away&lt;br /&gt;
+예쁘게 웃고 넘겨버릴래&lt;br /&gt;
+Just smile away
+Just smile awa-y
+아픔, 슬픔, 외로움 잊게&lt;/p&gt;
+
+&lt;hr /&gt;
+
+&lt;h2 id=&quot;emphasis-강조&quot;&gt;Emphasis 강조&lt;/h2&gt;
+&lt;p&gt;✍🏻 &lt;em&gt;기울여쓰기(italic)&lt;/em&gt; : * 또는 &lt;em&gt;로 감싼 텍스트&lt;br /&gt;
+✍🏻 &lt;strong&gt;두껍게 쓰기(bold)&lt;/strong&gt; : ** 또는 __로 감싼 텍스트&lt;br /&gt;
+✍🏻 &lt;del&gt;취소선&lt;/del&gt; : ~~ 로 감싼 텍스트&lt;br /&gt;
+✍🏻 이때, 기울여쓰기와 두껍게쓰기를 동시에 사용 가능&lt;br /&gt;
+&lt;script src=&quot;https://gist.github.com/soomni01/1e1f9954215dd7c33ce4cf2a0d04fd31.js&quot;&gt;&lt;/script&gt;
+*이 문장은 기울여 쓰는 문장입니다*&lt;br /&gt;
+&lt;strong&gt;이 문장은 두껍게 쓰는 문장입니다&lt;/strong&gt;&lt;br /&gt;
+&lt;del&gt;이 문장은 취소선 문장입니다&lt;/del&gt;&lt;br /&gt;
+&lt;u&gt;밑줄&lt;/u&gt; &lt;sup&gt;윗첨자&lt;/sup&gt; &lt;sub&gt;아랫첨자&lt;/sub&gt; &lt;br /&gt;
+_이 &lt;strong&gt;문장은&lt;/strong&gt; &lt;del&gt;혼합&lt;/del&gt; 문장입니다&lt;/em&gt;&lt;/p&gt;
+
+&lt;hr /&gt;
+
+&lt;h2 id=&quot;blockquotes-인용&quot;&gt;Blockquotes 인용&lt;/h2&gt;
+&lt;p&gt;✍🏻 /&amp;gt;으로 시작하는 텍스트&lt;br /&gt;
+✍🏻 /&amp;gt;는 3개까지 가능
+&lt;script src=&quot;https://gist.github.com/soomni01/06f8631ca607412df082d0fc8d930c61.js&quot;&gt;&lt;/script&gt;&lt;/p&gt;
+
+&lt;p&gt;Think of me&lt;/p&gt;
+&lt;blockquote&gt;
+  &lt;p&gt;Think of me fondly&lt;/p&gt;
+  &lt;blockquote&gt;
+    &lt;p&gt;When we’ve said goodbye&lt;/p&gt;
+    &lt;blockquote&gt;
+      &lt;p&gt;Remember me&lt;/p&gt;
+    &lt;/blockquote&gt;
+  &lt;/blockquote&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;✍🏻 인용구 안에 다른 문법들도 사용 가능
+&lt;script src=&quot;https://gist.github.com/soomni01/0a581b4cfcb44807175656bcd07b8c59.js&quot;&gt;&lt;/script&gt;&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;h3 id=&quot;once-in-a-while&quot;&gt;Once in a while&lt;/h3&gt;
+  &lt;ul&gt;
+    &lt;li&gt;Please Promise me you’ll try&lt;br /&gt;
+&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;textbox&lt;/code&gt;&lt;/li&gt;
+  &lt;/ul&gt;
+&lt;/blockquote&gt;
+
+&lt;hr /&gt;
+
+&lt;h2 id=&quot;list-목록&quot;&gt;List 목록&lt;/h2&gt;
+&lt;h3 id=&quot;순서가-없는-리스트&quot;&gt;순서가 없는 리스트&lt;/h3&gt;
+&lt;p&gt;✍🏻 *, +, -를 이용한 순서가 없는 목록&lt;br /&gt;
+✍🏻 들여쓰기를 하는 경우 모양이 바뀜
+&lt;script src=&quot;https://gist.github.com/soomni01/749b38699979ca60d4071ec824f4fddb.js&quot;&gt;&lt;/script&gt;&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;
+    &lt;p&gt;목록1
+  *목록2
+      *목록3&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;목록1&lt;br /&gt;
+    &lt;ul&gt;
+      &lt;li&gt;목록2&lt;br /&gt;
+        &lt;ul&gt;
+          &lt;li&gt;목록3&lt;/li&gt;
+        &lt;/ul&gt;
+      &lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;목록1&lt;br /&gt;&lt;/li&gt;
+  &lt;li&gt;목록2&lt;br /&gt;&lt;/li&gt;
+  &lt;li&gt;목록3&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&quot;순서가-있는-리스트&quot;&gt;순서가 있는 리스트&lt;/h3&gt;
+&lt;p&gt;✍🏻 숫자 입력시 순서가 있는 목록&lt;br /&gt;
+✍🏻 들여쓰기를 하는 경우 모양이 바뀜
+&lt;script src=&quot;https://gist.github.com/soomni01/803dfd8edca9b090e2781e05ab6a9c21.js&quot;&gt;&lt;/script&gt;&lt;/p&gt;
+&lt;ol&gt;
+  &lt;li&gt;목록1&lt;/li&gt;
+  &lt;li&gt;목록2&lt;/li&gt;
+  &lt;li&gt;목록3&lt;/li&gt;
+  &lt;li&gt;목록4&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;✍🏻 리스트 안에 추가 리스트를 사용할 경우 들여쓰기와 숫자 1번 부터 다시 적용
+&lt;script src=&quot;https://gist.github.com/soomni01/cbf822731ff0485e4ce51d2af0fa3194.js&quot;&gt;&lt;/script&gt;&lt;/p&gt;
+&lt;ol&gt;
+  &lt;li&gt;목록1
+    &lt;ol&gt;
+      &lt;li&gt;목록1-1&lt;/li&gt;
+    &lt;/ol&gt;
+  &lt;/li&gt;
+  &lt;li&gt;목록2&lt;/li&gt;
+  &lt;li&gt;목록3
+    &lt;ol&gt;
+      &lt;li&gt;목록3-1&lt;/li&gt;
+      &lt;li&gt;목록3-2&lt;/li&gt;
+    &lt;/ol&gt;
+  &lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;h3 id=&quot;혼합-리스트&quot;&gt;혼합 리스트&lt;/h3&gt;
+&lt;script src=&quot;https://gist.github.com/soomni01/874a148d31c77794b918e6e2ad4fee1a.js&quot;&gt;&lt;/script&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;목록1
+    &lt;ul&gt;
+      &lt;li&gt;내용1&lt;/li&gt;
+      &lt;li&gt;내용2
+  +내용3&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;목록2
+    &lt;ul&gt;
+      &lt;li&gt;내용1&lt;/li&gt;
+      &lt;li&gt;내용2
+        &lt;ol&gt;
+          &lt;li&gt;목록3&lt;/li&gt;
+        &lt;/ol&gt;
+      &lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;hr /&gt;
+
+&lt;h2 id=&quot;backslash-escapes&quot;&gt;Backslash Escapes&lt;/h2&gt;
+&lt;p&gt;✍🏻 특수문자를 표현할 떄, 표시할 문자 앞에 \를 넣고 특수문자 입력&lt;br /&gt;
+&lt;script src=&quot;https://gist.github.com/soomni01/3f8838a09fd0457774bba901a7cbfa9c.js&quot;&gt;&lt;/script&gt;&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;특수문자라 출력안됨&lt;/li&gt;
+  &lt;li&gt;특수문자라 출력안됨&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;* 특수문자 출력&lt;br /&gt;
+- 특수문자 출력&lt;br /&gt;
+[backslash]&lt;/p&gt;
+
+&lt;hr /&gt;
+
+&lt;h2 id=&quot;image-이미지&quot;&gt;image 이미지&lt;/h2&gt;
+&lt;p&gt;✍🏻 앞에 !가 붙음&lt;br /&gt;
+✍🏻 인라인 이미지 ![alt text](/test.png)&lt;br /&gt;
+✍🏻 링크 이미지 ![alt text](image_URL)
+&lt;script src=&quot;https://gist.github.com/soomni01/ffb904bc8380621e4217b7cd0d5e5479.js&quot;&gt;&lt;/script&gt;
+&lt;img src=&quot;https://is1-ssl.mzstatic.com/image/thumb/Purple123/v4/6e/5b/65/6e5b6558-90d6-5202-de76-d7b3bdc411c9/source/512x512bb.jpg&quot; alt=&quot;에비츄 이미지&quot; title=&quot;에비츄이미지&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;✍🏻 이미지 사이즈 변경 &lt;img width=&quot;OOOpx&quot; height=&quot;OOOpx&quot; /&gt;&amp;lt;/img&amp;gt; 수정
+&lt;script src=&quot;https://gist.github.com/soomni01/f15653197623782ff197b920290eaa0e.js&quot;&gt;&lt;/script&gt;
+&lt;img src=&quot;https://is1-ssl.mzstatic.com/image/thumb/Purple123/v4/6e/5b/65/6e5b6558-90d6-5202-de76-d7b3bdc411c9/source/512x512bb.jpg&quot; width=&quot;300&quot; height=&quot;200&quot; /&gt;&lt;/p&gt;
+
+&lt;hr /&gt;
+
+&lt;h2 id=&quot;links-링크&quot;&gt;Links 링크&lt;/h2&gt;
+&lt;h3 id=&quot;외부-링크&quot;&gt;외부 링크&lt;/h3&gt;
+&lt;script src=&quot;https://gist.github.com/soomni01/8b28ca72561c14223e0464038b413d37.js&quot;&gt;&lt;/script&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://www.google.co.kr&quot; title=&quot;구글&quot;&gt;Google&lt;/a&gt;
+&lt;a href=&quot;https://www.naver.com&quot; title=&quot;네이버&quot;&gt;Naver&lt;/a&gt;
+&lt;a href=&quot;https://www.github.com&quot; title=&quot;깃허브&quot;&gt;Github&lt;/a&gt;&lt;/p&gt;
+
+&lt;h3 id=&quot;내부-링크&quot;&gt;내부 링크&lt;/h3&gt;
+&lt;p&gt;✍🏻 &lt;a href=&quot;#이동할 헤드(제목)&quot;&gt;보여지는 내용&lt;/a&gt;&lt;br /&gt;
+✍🏻 괄호 안의 링크를 쓸 때는 띄어쓰기는 -로 연결하고 영어는 모두 소문자로 작성
+&lt;script src=&quot;https://gist.github.com/soomni01/68b279a21e014576705d646343910873.js&quot;&gt;&lt;/script&gt;
+&lt;a href=&quot;#1-header-헤더&quot;&gt;1. Header 헤더&lt;/a&gt;
+&lt;a href=&quot;#2-emphasis-강조&quot;&gt;2. Emphasis 강조&lt;/a&gt;
+&lt;a href=&quot;#3-list-목록&quot;&gt;3. List 목록&lt;/a&gt;&lt;/p&gt;
+
+&lt;hr /&gt;
+
+&lt;h2 id=&quot;codeblock-코드-블럭&quot;&gt;CodeBlock 코드 블럭&lt;/h2&gt;
+&lt;p&gt;✍🏻 간단한 인라인 코드는 텍스트를 앞뒤로 &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;기호로 감싸기&amp;lt;br&amp;gt;
+✍🏻 &lt;/code&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;혹은 ~~~사용&amp;lt;br&amp;gt;
+✍🏻 코드가 여러 줄인 경우, 줄 앞에 tab여백&amp;lt;br&amp;gt;
+✍🏻&lt;/code&gt;`옆에 언어를 지정할 시 syntax color 적용
+&lt;script src=&quot;https://gist.github.com/soomni01/c560891f48414083dd041e49b6b24b74.js&quot;&gt;&lt;/script&gt;&lt;/p&gt;
+&lt;div class=&quot;language-javascript highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;kd&quot;&gt;function&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;test&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;()&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
+  &lt;span class=&quot;nx&quot;&gt;console&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;log&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;dl&quot;&gt;&quot;&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;look ma', no spaces&lt;/span&gt;&lt;span class=&quot;dl&quot;&gt;&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;);&lt;/span&gt;
+ &lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;hr /&gt;
+
+&lt;h2 id=&quot;checklist-체크리스트&quot;&gt;CheckList 체크리스트&lt;/h2&gt;
+&lt;p&gt;✍🏻 줄 앞에 - [x] : 완료된 리스트&lt;br /&gt;
+✍🏻 줄 앞에 - [ ] : 미완료된 리스트&lt;br /&gt;
+✍🏻 체크 안에서 강조 외의 여러 기능 사용 가능
+&lt;script src=&quot;https://gist.github.com/soomni01/6a6ae16ae9fb65b3e82ba9b2cf9a8816.js&quot;&gt;&lt;/script&gt;&lt;/p&gt;
+&lt;ul class=&quot;task-list&quot;&gt;
+  &lt;li class=&quot;task-list-item&quot;&gt;&lt;input type=&quot;checkbox&quot; class=&quot;task-list-item-checkbox&quot; disabled=&quot;disabled&quot; checked=&quot;checked&quot; /&gt;Complete list&lt;/li&gt;
+  &lt;li class=&quot;task-list-item&quot;&gt;&lt;input type=&quot;checkbox&quot; class=&quot;task-list-item-checkbox&quot; disabled=&quot;disabled&quot; /&gt;Incomplete list&lt;/li&gt;
+  &lt;li class=&quot;task-list-item&quot;&gt;&lt;input type=&quot;checkbox&quot; class=&quot;task-list-item-checkbox&quot; disabled=&quot;disabled&quot; checked=&quot;checked&quot; /&gt;@mentions, #refs, &lt;a href=&quot;&quot;&gt;links&lt;/a&gt;, &lt;strong&gt;formatting&lt;/strong&gt;, and &lt;del&gt;tags&lt;/del&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;hr /&gt;
+
+&lt;h2 id=&quot;table-테이블&quot;&gt;Table 테이블&lt;/h2&gt;
+&lt;p&gt;✍🏻 헤더와 셀을 구분할 때 3개 이상의 - 기호가 필요&lt;br /&gt;
+✍🏻 헤더 셀을 구분하면서 :(colons) 기호로 셀(열/칸) 안에 내용을 정렬&lt;br /&gt;
+✍🏻 가장 좌측과 우축에 있는 |(vertical bar) 기호는 생략 가능
+&lt;script src=&quot;https://gist.github.com/soomni01/48e0f4615efdc717e5f705ede498d018.js&quot;&gt;&lt;/script&gt;
+헤더1|헤더2|헤더3
+|—|—|—|
+셀1|셀2|셀3
+셀4|셀5|셀6
+셀7|셀8|셀9&lt;/p&gt;
+
+&lt;script src=&quot;https://gist.github.com/soomni01/7f3e76401e6220233c67e2d125518b6e.js&quot;&gt;&lt;/script&gt;
+
+&lt;table&gt;
+  &lt;thead&gt;
+    &lt;tr&gt;
+      &lt;th style=&quot;text-align: left&quot;&gt;헤더1&lt;/th&gt;
+      &lt;th style=&quot;text-align: center&quot;&gt;헤더2&lt;/th&gt;
+      &lt;th style=&quot;text-align: right&quot;&gt;헤더3&lt;/th&gt;
+    &lt;/tr&gt;
+  &lt;/thead&gt;
+  &lt;tbody&gt;
+    &lt;tr&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;left&lt;/td&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;center&lt;/td&gt;
+      &lt;td style=&quot;text-align: right&quot;&gt;right&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;1&lt;/td&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;2&lt;/td&gt;
+      &lt;td style=&quot;text-align: right&quot;&gt;3&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;4&lt;/td&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;5&lt;/td&gt;
+      &lt;td style=&quot;text-align: right&quot;&gt;6&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;7&lt;/td&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;8&lt;/td&gt;
+      &lt;td style=&quot;text-align: right&quot;&gt;9&lt;/td&gt;
+    &lt;/tr&gt;
+  &lt;/tbody&gt;
+&lt;/table&gt;</content><author><name>Songzi Vong</name><email>vszhub@gmail.com</email></author><category term="markdown" /><summary type="html"></summary></entry><entry><title type="html">ToDoList 첫번째</title><link href="http://localhost:4000/2022/12/06/lsfirst/" rel="alternate" type="text/html" title="ToDoList 첫번째" /><published>2022-12-06T16:32:00+09:00</published><updated>2022-12-06T16:32:00+09:00</updated><id>http://localhost:4000/2022/12/06/lsfirst</id><content type="html" xml:base="http://localhost:4000/2022/12/06/lsfirst/">&lt;p&gt;혼자 공부를 시작할 때, 쉽게 시작할 수 있고 관심있게 할 만한 간단한 프로젝트가 무엇이 있을까 찾아봤을 때, ToDoList가 적합하다고 생각이 들어서 만들어보고자 한다.&lt;/p&gt;
 
 &lt;p&gt;유튜브(https://www.youtube.com/watch?v=hVeF1-WJZJw&amp;amp;list=PLoJdZ7VvEiRM4lw8htJg7qsDoHILpvfLP&amp;amp;index=3)를 참조하여 만들었다.&lt;/p&gt;
 
-&lt;p&gt;코드는 https://github.com/soomni01/ToDoList.git에 정리&lt;/p&gt;</content><author><name>Songzi Vong</name><email>vszhub@gmail.com</email></author><category term="project" /><summary type="html">혼자 공부를 시작할 때, 쉽게 시작할 수 있고 관심있게 할 만한 간단한 프로젝트가 무엇이 있을까 찾아봤을 때, ToDoList가 적합하다고 생각이 들어서 만들어보고자 했다.</summary></entry><entry><title type="html">1</title><link href="http://localhost:4000/2022/12/05/1/" rel="alternate" type="text/html" title="1" /><published>2022-12-05T00:00:00+09:00</published><updated>2022-12-05T00:00:00+09:00</updated><id>http://localhost:4000/2022/12/05/1</id><content type="html" xml:base="http://localhost:4000/2022/12/05/1/">&lt;p&gt;-Main-
+&lt;p&gt;코드는 https://github.com/soomni01/ToDoList.git에 정리&lt;/p&gt;</content><author><name>Songzi Vong</name><email>vszhub@gmail.com</email></author><category term="project" /><summary type="html">혼자 공부를 시작할 때, 쉽게 시작할 수 있고 관심있게 할 만한 간단한 프로젝트가 무엇이 있을까 찾아봤을 때, ToDoList가 적합하다고 생각이 들어서 만들어보고자 한다.</summary></entry><entry><title type="html">1</title><link href="http://localhost:4000/2022/12/05/1/" rel="alternate" type="text/html" title="1" /><published>2022-12-05T00:00:00+09:00</published><updated>2022-12-05T00:00:00+09:00</updated><id>http://localhost:4000/2022/12/05/1</id><content type="html" xml:base="http://localhost:4000/2022/12/05/1/">&lt;p&gt;-Main-
 start method는 Scanner객체와 TodoList라는 객체를 만들고 isList와 quit을 boolean 변수로 두고 있다. 
 Menu,displaymenu method를 통해 화면에 띄우는 역할을 한다. 
 quit이라는 플래그 변수를 통해 반복문을 형성하고 있다. 
